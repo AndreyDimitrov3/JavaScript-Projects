@@ -1,23 +1,21 @@
 body{
-    margin: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-main{
-    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
 }
 
 h1{
-    background: #222;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 0.25rem;
-    margin-bottom: 2.5rem;
+    text-align: center;
     max-width: 80%;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background: #222;
 }
 
 #value{
@@ -26,26 +24,27 @@ h1{
 
 .btn{
     font-family: "Ranchers", sans-serif;
-    background: transparent;
-    color: #222;
-    letter-spacing: 0.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    transition: all 0.3s linear;
+    letter-spacing: 0.1rem;
+    padding: 0.75rem 1.25rem;
     border: 2px solid #222;
-    cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 0.25rem;
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
-  }
+    transition: all 0.3s linear;
+    color: #222;
+    background: transparent;
+    cursor: pointer;
+}
   
-  .btn:hover {
+.btn:hover {
+    transform: translateY(-1px);
     color: #fff;
     background: #222;
-  }
+}
 
-  @media (max-width: 630px){
+@media (max-width: 630px){
     h1{
         width: 319px;
     }
-  }
+}
